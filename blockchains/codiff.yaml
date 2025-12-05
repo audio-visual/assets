@@ -1,0 +1,281 @@
+name: codiff
+channels: !!python/tuple
+- defaults
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/fastai/
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+dependencies:
+- blas=1.0=mkl
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge::_libgcc_mutex=0.1=conda_forge
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge::_openmp_mutex=4.5=2_kmp_llvm
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge::libgcc-ng=12.2.0=h65d4601_19
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge::libstdcxx-ng=12.2.0=h46fd767_19
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::brotlipy=0.7.0=py38h27cfd23_1003
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::bzip2=1.0.8=h7b6447c_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::ca-certificates=2023.08.22=h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::certifi=2023.7.22=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::cffi=1.15.1=py38h74dc2b5_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::charset-normalizer=2.0.4=pyhd3eb1b0_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::cryptography=41.0.3=py38h130f0dd_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::cudatoolkit=11.0.221=h6bb024c_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::freetype=2.12.1=h4a9f257_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::future=0.18.3=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::giflib=5.2.1=h5eee18b_3
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::gmp=6.2.1=h295c915_3
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::gnutls=3.6.15=he1e5248_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::idna=3.4=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::intel-openmp=2021.4.0=h06a4308_3561
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::jpeg=9e=h5eee18b_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::lame=3.100=h7b6447c_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::lcms2=2.12=h3be6417_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::ld_impl_linux-64=2.38=h1181459_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::lerc=3.0=h295c915_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libdeflate=1.17=h5eee18b_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libffi=3.3=he6710b0_2
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libgfortran-ng=8.2.0=hdf63c60_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libgfortran5=11.2.0=h1234567_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libidn2=2.3.4=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libpng=1.6.39=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libprotobuf=3.20.3=he621ea3_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libtasn1=4.19.0=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libtiff=4.5.1=h6a678d5_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libunistring=0.9.10=h27cfd23_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libuv=1.44.2=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libwebp=1.3.2=h11a3e52_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::libwebp-base=1.3.2=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::llvm-openmp=14.0.6=h9e868ea_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::lz4-c=1.9.4=h6a678d5_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::mkl=2021.4.0=h06a4308_640
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::mkl-service=2.4.0=py38h7f8727e_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::mkl_fft=1.3.1=py38hd3c417c_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::mkl_random=1.2.2=py38h51133e4_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::ncurses=6.4=h6a678d5_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::nettle=3.7.3=hbbd107a_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::numpy=1.19.2=py38h7895c89_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::numpy-base=1.19.2=py38h4c65ebe_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::openh264=2.1.1=h4ff587b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::openjpeg=2.4.0=h3ad879b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::openssl=1.1.1w=h7f8727e_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pillow=10.0.1=py38ha6cbd5a_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pip=20.3.3=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pycparser=2.21=pyhd3eb1b0_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pyopenssl=23.2.0=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pysocks=1.7.1=py38_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::python=3.8.5=h7579374_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::pyyaml=6.0=py38h7f8727e_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::readline=8.2=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::requests=2.31.0=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::setuptools=68.0.0=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::six=1.16.0=pyhd3eb1b0_1
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::sqlite=3.41.2=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::tk=8.6.12=h1ccaba5_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::typing-extensions=4.7.1=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::typing_extensions=4.7.1=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::urllib3=1.26.16=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::wheel=0.41.2=py38h06a4308_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::xz=5.4.2=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::yaml=0.2.5=h7b6447c_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::zlib=1.2.13=h5eee18b_0
+- https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main::zstd=1.5.5=hc292b87_0
+- libiconv=1.14=0
+- ninja=1.7.2=0
+- pytorch::ffmpeg=4.3=hf484d3e_0
+- pytorch::pytorch=1.7.0=py3.8_cuda11.0.221_cudnn8.0.3_0
+- pytorch::pytorch-mutex=1.0=cuda
+- pytorch::torchaudio=0.7.0=py38
+- pytorch::torchvision=0.8.0=py38_cu110
+prefix: /home/ubuntu/anaconda3/envs/codiff
+
+Epoch 117, global step 50089: val/rec_loss reached 0.03059 (best 0.02993), saving model to "/home/ubuntu/shared-data/256_vae/checkpoints/epoch=000117.ckpt" as top 10
+Epoch 118:   0%| | 0/1047 [00:00<00:00, 2876.75it/s, loss=2.5e+03, v_num=2, aeloss_step=3terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: initialization error
+Exception raised from insert_events at /opt/conda/conda-bld/pytorch_1603729096996/work/c10/cuda/CUDACachingAllocator.cpp:717 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fb3ec6048b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::cuda::CUDACachingAllocator::raw_delete(void*) + 0x1070 (0x7fb3ec856f20 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: c10::TensorImpl::release_resources() + 0x4d (0x7fb3ec5efb7d in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x5f65b2 (0x7fb3e59fc5b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #31: <unknown function> + 0x76db (0x7fb3f220c6db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #32: clone + 0x3f (0x7fb3f1f3561f in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: initialization error
+Exception raised from insert_events at /opt/conda/conda-bld/pytorch_1603729096996/work/c10/cuda/CUDACachingAllocator.cpp:717 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fb3ec6048b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::cuda::CUDACachingAllocator::raw_delete(void*) + 0x1070 (0x7fb3ec856f20 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: c10::TensorImpl::release_resources() + 0x4d (0x7fb3ec5efb7d in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x5f65b2 (0x7fb3e59fc5b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #31: <unknown function> + 0x76db (0x7fb3f220c6db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #32: clone + 0x3f (0x7fb3f1f3561f in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: initialization error
+Exception raised from insert_events at /opt/conda/conda-bld/pytorch_1603729096996/work/c10/cuda/CUDACachingAllocator.cpp:717 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fb3ec6048b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::cuda::CUDACachingAllocator::raw_delete(void*) + 0x1070 (0x7fb3ec856f20 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: c10::TensorImpl::release_resources() + 0x4d (0x7fb3ec5efb7d in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x5f65b2 (0x7fb3e59fc5b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: initialization error
+Exception raised from insert_events at /opt/conda/conda-bld/pytorch_1603729096996/work/c10/cuda/CUDACachingAllocator.cpp:717 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fb3ec6048b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::cuda::CUDACachingAllocator::raw_delete(void*) + 0x1070 (0x7fb3ec856f20 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: c10::TensorImpl::release_resources() + 0x4d (0x7fb3ec5efb7d in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x5f65b2 (0x7fb3e59fc5b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #31: <unknown function> + 0x76db (0x7fb3f220c6db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #32: clone + 0x3f (0x7fb3f1f3561f in /lib/x86_64-linux-gnu/libc.so.6)
+
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: initialization error
+Exception raised from insert_events at /opt/conda/conda-bld/pytorch_1603729096996/work/c10/cuda/CUDACachingAllocator.cpp:717 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x42 (0x7fb3ec6048b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::cuda::CUDACachingAllocator::raw_delete(void*) + 0x1070 (0x7fb3ec856f20 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: c10::TensorImpl::release_resources() + 0x4d (0x7fb3ec5efb7d in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #3: <unknown function> + 0x5f65b2 (0x7fb3e59fc5b2 in /home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #31: <unknown function> + 0x76db (0x7fb3f220c6db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #32: clone + 0x3f (0x7fb3f1f3561f in /lib/x86_64-linux-gnu/libc.so.6)
+
+Summoning checkpoint.
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1045, in _run_train
+    self.fit_loop.run()
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/fit_loop.py", line 200, in advance
+    epoch_output = self.epoch_loop.run(train_dataloader)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 130, in advance
+    batch_output = self.batch_loop.run(batch, self.iteration_count, self._dataloader_idx)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 101, in run
+    super().run(batch, batch_idx, dataloader_idx)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 148, in advance
+    result = self._run_optimization(batch_idx, split_batch, opt_idx, optimizer)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 209, in _run_optimization
+    self._update_running_loss(result.loss)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 603, in _update_running_loss
+    self.accumulated_loss.append(current_loss)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/supporters.py", line 81, in append
+    x = x.to(self.memory)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 11918) is killed by signal: Aborted. 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 738, in <module>
+    trainer.fit(model, data)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 553, in fit
+    self._run(model)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 918, in _run
+    self._dispatch()
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 986, in _dispatch
+    self.accelerator.start_training(self)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/accelerators/accelerator.py", line 92, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 161, in start_training
+    self._results = trainer.run_stage()
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 996, in run_stage
+    return self._run_train()
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1058, in _run_train
+    self.training_type_plugin.reconciliate_processes(traceback.format_exc())
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/plugins/training_type/ddp.py", line 453, in reconciliate_processes
+    raise DeadlockDetectedException(f"DeadLock detected from rank: {self.global_rank} \n {trace}")
+pytorch_lightning.utilities.exceptions.DeadlockDetectedException: DeadLock detected from rank: 0 
+ Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1045, in _run_train
+    self.fit_loop.run()
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/fit_loop.py", line 200, in advance
+    epoch_output = self.epoch_loop.run(train_dataloader)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 130, in advance
+    batch_output = self.batch_loop.run(batch, self.iteration_count, self._dataloader_idx)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 101, in run
+    super().run(batch, batch_idx, dataloader_idx)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/base.py", line 111, in run
+    self.advance(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 148, in advance
+    result = self._run_optimization(batch_idx, split_batch, opt_idx, optimizer)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 209, in _run_optimization
+    self._update_running_loss(result.loss)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 603, in _update_running_loss
+    self.accumulated_loss.append(current_loss)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/pytorch_lightning/trainer/supporters.py", line 81, in append
+    x = x.to(self.memory)
+  File "/home/ubuntu/anaconda3/envs/codiff/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 11918) is killed by signal: Aborted
+gc.collect() before image log
+
+ssh -p 43041 root@i-2.gpushare.com
+
+
+
+reviewer1:
+1. The design of the Cross-modal Representation Learning section closely resembles that of 'Unsupervised Voice-Face Representation Learning by Cross-Modal Prototype Contrast,' which was presented at IJCAI 2022. However, the paper does not reference this work.
+Answer 1: As previously stated in the footnotes, after the modifications, we have included the citation in the main text.
+
+2. The terms "False negative sampling problem" and "Deviate positive sampling problem" are not commonly used and might not be considered professional expressions. "Deviate positive sampling" seems to refer to "hard positive sampling," which essentially addresses the problem of sampling positive pairs. In my understanding, these issues fundamentally revolve around the sampling of positive and negative pairs.
+Answer 2: "False negative" is a common term, indicating cases where positive samples are misclassified as negative due to the lack of supervised labels in unsupervised settings. "Deviate positive," on the other hand, is a new term introduced in our paper to describe a phenomenon present in the data (you can refer to Fig. 4 for more detail). The paper provides a detailed explanation of this phenomenon and offers specific handling methods for it.
+
+3. The description of the InfoNCE loss is not presented objectively. Both InfoNCE loss and the rescaling of the CMPC loss seem to address the optimization of hard sample pairs. The dependence on feature model initialization during training and in the context of voice and text clustering features should be further clarified.
+Answer 3:  The loss we introduced in the paper is specifically designed to address issues related to unsupervised settings. Unlike the foundational InfoNCE loss, it does not provide targeted solutions for the problems of false negatives and deviate positives in unsupervised samples. This is fundamentally different from addressing the issue of hard negatives.
+
+4. In Table 1, reference [7] from CVPR 2021 appears to be incorrectly abbreviated as CID. The abbreviation for CID is not defined in this paper or the references [7]. It should be labeled as AVID+CMA. Furthermore, reference [19] does not seem to utilize the best results from the cited work DIMNet-IG in the comparative experiments. This discrepancy should be addressed.
+Answer 4: For the first problem, we used the abbreviation 'CID' to maintain consistency with the abbreviation used in our previous conference paper. (as there were various settings in the original CVPR paper, so we used 'CID'). In this paper, we have unified the abbreviation to 'AVID'. As for the second problem, we were indeed comparing the optimal results previously. The difference lies in the fact that the original paper conducted tests on several different test groups and named them as different models, such as DIMNet-G, DIMNet-IG, etc.
+
+5. Regarding Fig. 5 (t-SNE visualization), the use of circles and squares for representation does not facilitate easy observation. It is recommended to use separate plots for clearer visualization.
+Answer 5: This is a good suggestion. However after careful consideration, we felt that it was not appropriate to use separate plots to represent our idea. This is because our objective is to demonstrate that the feature distributions are similar in both modalities. Therefore, in order to better present our viewpoint, we have made some modifications to the figure and added more detailed descriptions in the article content.
+
+6. The overall English expression throughout the manuscript could be improved. Additionally, there appears to be a formatting issue with a blank section on page 5 of the manuscript. 
+Answer 6: We have made grammatical and content revisions to the paper to address this issue.
+
+
+reviewer2:
+1. Is there no consideration of false positives in this work, or is it considered not significant, or is it temporarily not addressed? Clarification is needed on this aspect.
+Answer 1: In the first stage of our paper, one of the main issues addressed is the problem of false positives. There is a detailed explanation in the method section in the paper.
+
+2. Are the authors planning to make the code publicly available?
+Answer 2: The code for the paper has been organized and is already uploaded on GitHub. However, as the paper has not been accepted yet, the repository is currently set to private. We will make the code public once the paper is accepted.
+
+3. Why did the generator use GAN instead of diffusion?
+Answer 3: Actually, we have tried with diffusion. However, the current pipeline is not suitable for diffusion. (Because the VAE encoder inside the diffusion did not learn a manifold representation of a human face, this resulted in highly variable generated results, making it difficult to converge on a recognizable human face (similar conclusions are also found in other papers)). We are now in the process of constructing the necessary data for diffusion training, but this will require a longer period to achieve good results.
+
+4. It might be helpful to introduce the models used for g^F and g^V in the Method section for better understanding when referencing them in the framework diagram.
+Answer 4: We have added a description related to the model structure in the 'Experimental Settings' section. (The reason we did not provide a detailed description of the models in the 'METHODOLOGY' section is because our main contribution lies in designing the method to address the issues of false negatives and deviate positives in real-world data. The model structure is consistent with ResNet34, and there are many existing papers with detailed explanations. Therefore, we have not provided an extensive description of it in this paper.)
+
+5. Is it overly restrictive to assume that C^V and C^F both have the same number of K classes? This assumption could be discussed.
+Answer 5: This is a good question. Actually, we did not assume that C^V and C^F have the same number of categories. During the training phase, since we are working with unlabeled data, we cannot know the actual number of clustering centers. Therefore, we can only assume there are k1, k2, k3 of them (we choosed 500,1000,1500 in our implementation). When calculating the loss, we actually computed the results under different clustering centers separately and averaged the results, which is represented as 'R' in the equation.
+
+6. For the terms in Equation (7), should there be further design and analysis of the weight parameters between them?
+Answer 6: The reason we did not add different weights to Equation (7) is that in the implementation of the loss, we have already assigned different weights to each sample at the sample level through automated learning (as shown in Equation (9)). Therefore, we assume that further designing weights for the loss item does not add significant meaning.
+
+7. Experiment control groups should be designed for Figure 5.
+Answer 7: Based on the suggestion, we have added an experimental description section about Figure 5. 
+
+
+
+title:Unsupervised Voice-Face Representation Learning by Cross-Modal Prototype Contrast  
+doi: 10.24963/ijcai.2022/526  
+url: https://doi.org/10.24963/ijcai.2022/526  
+
+While AIGC methods like DALL-E2 are impressive, there has been a noticeable gap in research focused on voice-and-face interactions. Our method fills this gap by providing a novel approach for generating faces from voice inputs, utilizing our introduced cross-modal representation model.
+
+Beyond bridging this gap, our work has broader implications. It can serve as a foundation for future research aimed at understanding the relationships between specific voice feature 
+ and corresponding facial features. This exploration can provide valuable insights, not only in the context of computer science but also in the larger field of human science. By unraveling the intricacies of how voices and faces are connected, our work has the potential to inspire and drive further interdisciplinary research, fostering a deeper understanding of human interaction.
+
